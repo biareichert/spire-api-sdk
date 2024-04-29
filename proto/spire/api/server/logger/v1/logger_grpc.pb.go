@@ -4,7 +4,7 @@ package loggerv1
 
 import (
 	context "context"
-	types "github.com/spiffe/spire-api-sdk/proto/spire/api/types"
+	types "github.com/biareichert/spire-api-sdk/proto/spire/api/types"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
