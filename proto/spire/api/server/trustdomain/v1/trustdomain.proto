@@ -1,6 +1,6 @@
 syntax = "proto3";
 package spire.api.server.trustdomain.v1;
-option go_package = "github.com/spiffe/spire-api-sdk/proto/spire/api/server/trustdomain/v1;trustdomain";
+option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/server/trustdomain/v1;trustdomain";
 
 import "google/protobuf/empty.proto";
 import "spire/api/types/federationrelationship.proto";
