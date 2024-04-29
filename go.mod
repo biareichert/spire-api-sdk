@@ -1,4 +1,4 @@
-module github.com/spiffe/spire-api-sdk
+module github.com/biareichert/spire-api-sdk
 
 go 1.12
 
