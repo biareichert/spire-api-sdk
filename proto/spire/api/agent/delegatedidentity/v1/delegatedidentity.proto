@@ -1,6 +1,6 @@
 syntax = "proto3";
 package spire.api.agent.delegatedidentity.v1;
-option go_package = "github.com/spiffe/spire-api-sdk/proto/spire/api/agent/delegatedidentity/v1;delegatedidentityv1";
+option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/agent/delegatedidentity/v1;delegatedidentityv1";
 
 import "spire/api/types/selector.proto";
 import "spire/api/types/x509svid.proto";
