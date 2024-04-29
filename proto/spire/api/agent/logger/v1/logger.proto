@@ -1,6 +1,6 @@
 syntax = "proto3";
 package spire.api.agent.logger.v1;
-option go_package = "github.com/spiffe/spire-api-sdk/proto/spire/api/agent/logger/v1;loggerv1";
+option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/agent/logger/v1;loggerv1";
 
 import "spire/api/types/logger.proto";
 
@@ -37,3 +37,4 @@ message SetLogLevelRequest {
 // Empty Reset Log Level Request message for future extension
 message ResetLogLevelRequest {
 }
+
