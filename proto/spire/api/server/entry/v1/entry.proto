@@ -189,6 +189,7 @@ message BatchDeleteEntryResponse {
 message GetAuthorizedEntriesRequest {
     // An output mask indicating which fields are set in the response.
     spire.api.types.EntryMask output_mask = 1;
+    string callerID = 2;
 }
 
 message GetAuthorizedEntriesResponse {
