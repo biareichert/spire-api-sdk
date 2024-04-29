@@ -1,6 +1,6 @@
 syntax = "proto3";
 package spire.api.server.entry.v1;
-option go_package = "github.com/spiffe/spire-api-sdk/proto/spire/api/server/entry/v1;entryv1";
+option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/server/entry/v1;entryv1";
 
 import "spire/api/types/entry.proto";
 import "spire/api/types/federateswith.proto";
