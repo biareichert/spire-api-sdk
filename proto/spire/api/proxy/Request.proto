@@ -1,6 +1,6 @@
 syntax = "proto3";
-package private.server.proxy;
-option go_package = "github.com/biareichert/spire/proto/private/server/proxy";
+package spire.api.proxy;
+option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/proxy";
 
 message Request{
 
@@ -32,6 +32,5 @@ message Request{
 	string trust_domain = 10;
 	
 }
-
 
 
