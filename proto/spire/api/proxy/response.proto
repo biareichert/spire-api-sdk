@@ -8,14 +8,14 @@ message Response{
 	string resp = 1;
 	int32 exitstatus = 2;
 
-	string trust_domain = 3;
-	string path = 4;
+	//string trust_domain = 3;
+	//string path = 4;
 	repeated bytes cert_chain = 5;
-	int64 expires_at = 6;
-	string hint = 7;
+	//int64 expires_at = 6;
+	//string hint = 7;
 	bool reattestable = 8;
 	string agentID = 9;
-	bytes svid = 10;
+	//bytes svid = 10;
 
 	//repeated bytes asn1 = 11;
 	//repeated bool tainted = 12;
