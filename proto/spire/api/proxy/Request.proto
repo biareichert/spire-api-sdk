@@ -1,0 +1,37 @@
+syntax = "proto3";
+package private.server.proxy;
+option go_package = "github.com/biareichert/spire/proto/private/server/proxy";
+
+message Request{
+
+	enum RequestType {
+		SPIRE_SERVER = 0;
+		SPIRE_AGENT = 1;
+		SPIRE_AGENT_GET_ENTRIES = 2;
+		SPIRE_AGENT_GET_BUNDLE = 3;
+		TESTE = 4;
+		SPIRE_AGENT_NEW = 5;
+		SPIRE_AGENT_OLD = 6;
+		
+	}
+
+	RequestType action = 2;
+
+	repeated string args = 3;
+
+	string type = 4;
+	
+	bytes payload = 5;
+	
+	bytes csr = 6;
+
+	string agentID = 8;
+
+	bytes cert = 9;
+
+	string trust_domain = 10;
+	
+}
+
+
+
