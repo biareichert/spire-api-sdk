@@ -1,0 +1,35 @@
+syntax = "proto3";
+package spire.api.proxy;
+option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/proxy";
+
+import "spire/api/types/bundle.proto";
+
+message Response{
+	string resp = 1;
+	int32 exitstatus = 2;
+
+	string trust_domain = 3;
+	string path = 4;
+	repeated bytes cert_chain = 5;
+	int64 expires_at = 6;
+	string hint = 7;
+	bool reattestable = 8;
+	string agentID = 9;
+	bytes svid = 10;
+
+	repeated bytes asn1 = 11;
+	repeated bool tainted = 12;
+	repeated bytes pub_key = 13;
+	repeated string key_id = 14;
+	repeated int64 exp_at = 15;
+	repeated bool taintedJWT = 16;
+	int64 re_hint = 17;
+	uint64 req_num = 18;
+
+	spire.api.types.Bundle bundle = 19;
+
+
+
+	
+}
+
