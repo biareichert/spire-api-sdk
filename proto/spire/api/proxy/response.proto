@@ -17,14 +17,14 @@ message Response{
 	string agentID = 9;
 	bytes svid = 10;
 
-	repeated bytes asn1 = 11;
-	repeated bool tainted = 12;
-	repeated bytes pub_key = 13;
-	repeated string key_id = 14;
-	repeated int64 exp_at = 15;
-	repeated bool taintedJWT = 16;
-	int64 re_hint = 17;
-	uint64 req_num = 18;
+	//repeated bytes asn1 = 11;
+	//repeated bool tainted = 12;
+	//repeated bytes pub_key = 13;
+	//repeated string key_id = 14;
+	//repeated int64 exp_at = 15;
+	//repeated bool taintedJWT = 16;
+	//int64 re_hint = 17;
+	//uint64 req_num = 18;
 
 	spire.api.types.Bundle bundle = 19;
 
@@ -32,4 +32,3 @@ message Response{
 
 	
 }
-
