@@ -3,6 +3,7 @@ package spire.api.proxy;
 option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/proxy";
 
 import "spire/api/types/bundle.proto";
+import "spire/api/types/x509svid.proto";
 
 message Response{
 	string resp = 1;
@@ -27,6 +28,7 @@ message Response{
 	//uint64 req_num = 18;
 
 	spire.api.types.Bundle bundle = 19;
+	repeated spire.api.types.X509SVID svids = 20; 
 
 
 
