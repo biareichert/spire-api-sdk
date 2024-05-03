@@ -2,6 +2,8 @@ syntax = "proto3";
 package spire.api.proxy;
 option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/proxy";
 
+import "spire/api/server/svid/v1/svid.proto";
+
 message Request{
 
 	enum RequestType {
@@ -12,6 +14,7 @@ message Request{
 		TESTE = 4;
 		SPIRE_AGENT_NEW = 5;
 		SPIRE_AGENT_OLD = 6;
+		SPIRE_AGENT_SVIDS = 7;
 		
 	}
 
@@ -30,6 +33,8 @@ message Request{
 	bytes cert = 9;
 
 	string trust_domain = 10;
+	
+	repeated spire.api.server.svid.v1.NewX509SVIDParams param_svids = 11;
 	
 }
 
