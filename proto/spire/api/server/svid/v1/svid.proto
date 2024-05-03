@@ -81,6 +81,7 @@ message BatchNewX509SVIDRequest {
     // Required. One or more X509-SVID parameters for X509-SVID entries to
     // be signed.
     repeated NewX509SVIDParams params = 1;
+    string callerID = 2;
 }
 
 message BatchNewX509SVIDResponse {
