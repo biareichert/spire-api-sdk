@@ -15,7 +15,7 @@ message Response{
 	//string hint = 7;
 	bool reattestable = 8;
 	string agentID = 9;
-	//bytes svid = 10;
+	bytes svid = 10;
 
 	//repeated bytes asn1 = 11;
 	//repeated bool tainted = 12;
