@@ -1,3 +1,4 @@
+//Author: Beatriz Michelson Reichert
 syntax = "proto3";
 package spire.api.proxy;
 option go_package = "github.com/biareichert/spire-api-sdk/proto/spire/api/proxy";
@@ -11,11 +12,7 @@ message Request{
 		SPIRE_AGENT = 1;
 		SPIRE_AGENT_GET_ENTRIES = 2;
 		SPIRE_AGENT_GET_BUNDLE = 3;
-		TESTE = 4;
-		SPIRE_AGENT_NEW = 5;
-		SPIRE_AGENT_OLD = 6;
-		SPIRE_AGENT_SVIDS = 7;
-		
+		SPIRE_AGENT_SVIDS = 4;
 	}
 
 	RequestType action = 2;
